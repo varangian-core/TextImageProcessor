@@ -1,0 +1,5 @@
+Create concurrent queue. Multiple camera feed streamed in the same serialized stream; deserialize based on the capture time signautre; and stage for Vision Analysis.
+
+Running image similarity comparison. Define algos that can eliminate postiional image repeats or frames with text that is not legible for analysis.
+
+Does Vision API support batch processing?

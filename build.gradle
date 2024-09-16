@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Google Cloud Vision API
+    implementation 'com.google.cloud:google-cloud-vision:3.3.0'
+
+    // Gson for JSON handling
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // OpenCV dependency
+    implementation 'org.openpnp:opencv:4.5.1-2'
+
+    // JUnit for testing
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+application {
+    // Set the fully qualified name of your main class
+    mainClass = 'CameraCaptureUI'  // Adjust if your class is in a package
+}
+
+test {
+    useJUnitPlatform()
+}
